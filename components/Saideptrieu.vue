@@ -1,27 +1,31 @@
 <template> 
   <div class="super duper box">
       <div class="super box 1 d-flex flex-row ">
-        <div class="left">
-          <div class="features">
+        <div class="left d-flex flex-column" width="40%">
+          <p class="features">
             FEATURES
-          </div>
-          <div class="solve">
+          </p>
+          <p class="solve">
             Solve Your Staffing Challenges
-          </div>
-          <div class="our">
+          </p>
+          <p class="our">
             Our plateform provides tailored features that effortlessly address your staffing needs, ensuring the right talent is always ready for you.
-          </div>
-          <div class="get">
-            Get Started
-          </div>
-          <div class="try">Try JobInn Today !</div>
+          </p>
+          <v-sheet class="but d-flex" justify="row">
+            <p class="get">
+              Get Started
+            </p>
+            <p class="try">
+              Try JobInn Today !
+            </p>
+          </v-sheet>
         </div>
-        <div class="right">
+        <div class="right" width="40%">
         <div class="all 4">
-          <div class="big card 1 d-flex ">
-            <v-card class="c1" outlined>
+          <div class="big card 1 d-flex justify-space-between"">
+            <v-card class="c1" outlined rounded>
               <div>
-                <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307ea94b1a01a34c45b64b_public.svg" class="d-flex">
+                <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307ea94b1a01a34c45b64b_public.svg">
               </div>
               <v-card-title>
                 Automated Smart Matching
@@ -30,7 +34,7 @@
                 Instantly connect with the perfect candidates for your needs.
               </v-card-text>
             </v-card>
-            <v-card class="c2" outlined>
+            <v-card class="c2" outlined rounded>
               <div>
                 <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307ea94b1a01a34c45b631_offline_bolt.svg">
               </div>
@@ -42,8 +46,8 @@
               </v-card-text>
             </v-card>
           </div>
-          <div class="d-flex">
-            <v-card class="c3" outlined>
+          <div class="big card 2 d-flex justify-space-between"">
+            <v-card class="c3" outlined rounded>
               <div>
                 <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307eaa4b1a01a34c45b653_password.svg">
               </div>
@@ -54,7 +58,7 @@
                 Stay compliant with all employment laws and regulations.
               </v-card-text>
             </v-card>
-            <v-card class="c4" outlined>
+            <v-card class="c4" outlined rounded>
               <div>
                 <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307ea94b1a01a34c45b622_timelapse.svg">
               </div>
