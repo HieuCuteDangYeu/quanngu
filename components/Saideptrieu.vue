@@ -1,7 +1,8 @@
 <template> 
-  <div class="super duper box">
-      <div class="super box 1 d-flex flex-row ">
-        <div class="left d-flex flex-column" width="40%">
+
+      <div class="super-box-1 d-flex justify-space-between" >
+          <v-sheet class="left d-flex flex-column" width="40%">
+
           <p class="features">
             FEATURES
           </p>
@@ -11,7 +12,7 @@
           <p class="our">
             Our plateform provides tailored features that effortlessly address your staffing needs, ensuring the right talent is always ready for you.
           </p>
-          <v-sheet class="but d-flex" justify="row">
+          <v-sheet class="but">
             <p class="get">
               Get Started
             </p>
@@ -19,10 +20,12 @@
               Try JobInn Today !
             </p>
           </v-sheet>
-        </div>
-        <div class="right" width="40%">
-        <div class="all 4">
-          <div class="big card 1 d-flex justify-space-between"">
+        </v-sheet>
+
+          <v-sheet class="right" width="40%">
+
+        <div class="all-4">
+          <v-container class="d-flex">
             <v-card class="c1" outlined rounded>
               <div>
                 <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307ea94b1a01a34c45b64b_public.svg">
@@ -45,8 +48,9 @@
                 Equip your workforce with specific skills, verified through certification.
               </v-card-text>
             </v-card>
+          </v-container>
           </div>
-          <div class="big card 2 d-flex justify-space-between"">
+          <div class="big-card-2 d-flex ">
             <v-card class="c3" outlined rounded>
               <div>
                 <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307eaa4b1a01a34c45b653_password.svg">
@@ -70,12 +74,10 @@
               </v-card-text>
             </v-card>
           </div>
-        </div>
+        </v-sheet>
+
         </div>
       </div>
-      <div class="super box 2">
-      </div>
-  </div>
 
 </template>
 <style> 
