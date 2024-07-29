@@ -15,10 +15,13 @@
             Our plateform provides tailored features that effortlessly address your staffing needs, ensuring the right talent is always ready for you.
           </p>
           <v-sheet class="but d-flex" justify="row">
-            <p>
+            <v-btn class="btn1"
+            color="orange"
+            rounded
+            x-large>
               Get Started
-            </p>
-            <p>
+            </v-btn>
+            <p class="pa5">
               Try JobInn Today !
             </p>
           </v-sheet>
@@ -114,7 +117,7 @@
     padding-bottom: 0px;
 }
 .pa4{
-  color: var(--neutral--800);
+  color: #00112b;
     letter-spacing: -.02em;
     margin-bottom: 0;
     font-size: 16px;
@@ -127,5 +130,15 @@
     unicode-bidi: isolate;
     font-family: Claritycity, sans-serif;
     font-weight: 500;
+    padding-top: 40px;
+}
+.but{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+} 
+.pa5{
+  margin-top:15px;
+  margin-left:20px;
 }
 </style>
