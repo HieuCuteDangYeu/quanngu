@@ -83,13 +83,13 @@
 </template>
 <style> 
 .title1 {
-  font-size:22px;
+  font-size:23px;
 }
 .title2 {
-  font-size:22px;
+  font-size:23px;
 }
 .title4 {
-  font-size:22px;
+  font-size:23px;
 }
 .pa1{
    margin-top: 95px;
