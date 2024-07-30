@@ -1,8 +1,10 @@
 <template>
+  
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+  layout: 'menu',
+  data() {}
 }
 </script>
