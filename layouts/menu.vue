@@ -7,35 +7,33 @@
             <div class="mr-14">
                 <v-btn text rounded large class="text-capitalize">Organizations</v-btn>
                 <v-btn text rounded large class="text-capitalize">Workers</v-btn>
-                <v-menu open-on-hover no-click-animation offset-y>
+                <v-menu rounded="xl" open-on-hover nudge-bottom="40" nudge-left="100">
                     <template v-slot:activator="{ on, attrs }">
                         <v-btn text v-bind="attrs" v-on="on" rounded large class="text-capitalize">
                             <span>Resources</span>
                             <v-icon>mdi-chevron-down</v-icon>
                         </v-btn>
                     </template>
-                    <v-card>
-                        <v-list class="d-flex">
-                            <div class="d-flex flex-column">
-                                <v-list-subheader class="text-black text-bold font-weight-medium ml-8">Product</v-list-subheader>
-                                <v-hover v-slot="{ hover }">
-                                    <v-btn rounded text class="text-capitalize text-body-2"><v-list-item :class="hover ? 'deep-purple--text' : 'blue-grey--text'">FAQ</v-list-item></v-btn>
-                                </v-hover>
-                                <v-hover v-slot="{ hover }">
-                                    <v-btn rounded text class="text-capitalize text-body-2"><v-list-item :class="hover ? 'deep-purple--text' : 'blue-grey--text'">Contact Us</v-list-item></v-btn>
-                                </v-hover>
-                            </div>
-                            <v-divider class="mb-2"></v-divider>
-                            <div class="d-flex flex-column">
-                                <v-list-subheader class="text-black font-weight-medium ml-8">Other</v-list-subheader>
-                                <v-hover v-slot="{ hover }">
-                                    <v-btn rounded text class="text-capitalize text-body-2"><v-list-item :class="hover ? 'deep-purple--text' : 'blue-grey--text'">Terms & Conditions</v-list-item></v-btn>
-                                </v-hover>
-                                <v-hover v-slot="{ hover }">
-                                    <v-btn rounded text class="text-capitalize text-body-2"><v-list-item :class="hover ? 'deep-purple--text' : 'blue-grey--text'">Privacy Policy</v-list-item></v-btn>
-                                </v-hover>
-                            </div>
-                        </v-list>
+                    <v-card class="d-flex ma-4 pa-2" rounded="xl">
+                        <div class="d-flex flex-column">
+                            <v-list-subheader class="text-black text-bold font-weight-medium ml-8">Product</v-list-subheader>
+                            <v-hover v-slot="{ hover }">
+                                <v-btn rounded text class="text-capitalize text-body-2"><v-list-item :class="hover ? 'darkpurple--text' : 'darkgrey2--text'">FAQ</v-list-item></v-btn>
+                            </v-hover>
+                            <v-hover v-slot="{ hover }">
+                                <v-btn rounded text class="text-capitalize text-body-2"><v-list-item :class="hover ? 'darkpurple--text' : 'darkgrey2--text'">Contact Us</v-list-item></v-btn>
+                            </v-hover>
+                        </div>
+                        <v-divider class="mb-2"></v-divider>
+                        <div class="d-flex flex-column">
+                            <v-list-subheader class="text-black font-weight-medium ml-8">Other</v-list-subheader>
+                            <v-hover v-slot="{ hover }">
+                                <v-btn rounded text class="text-capitalize text-body-2"><v-list-item :class="hover ? 'darkpurple--text' : 'darkgrey2--text'">Terms & Conditions</v-list-item></v-btn>
+                            </v-hover>
+                            <v-hover v-slot="{ hover }">
+                                <v-btn rounded text class="text-capitalize text-body-2"><v-list-item :class="hover ? 'darkpurple--text' : 'darkgrey2--text'">Privacy Policy</v-list-item></v-btn>
+                            </v-hover>
+                        </div>
                     </v-card>
                 </v-menu>
                 <v-hover v-slot="{ hover }">
@@ -43,6 +41,11 @@
                 </v-hover>
             </div>
         </v-tool-bar>
+        <v-main>
+            <v-container>
+                <Nuxt />
+            </v-container>
+        </v-main>
     </v-app>
     
 </template>
@@ -57,6 +60,8 @@ export default {
 </script>
 
 <style scoped>
-    
+::v-deep .v-menu__content {
+    box-shadow: none;
+}  
 </style>
 

@@ -1,5 +1,5 @@
 <template>
-  
+  <Panel></Panel>
 </template>
 
 <script>
@@ -8,3 +8,6 @@ export default {
   data() {}
 }
 </script>
+
+
+
