@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  layout: 'menu',
+  name: "IndexPage",
   data() {}
 }
 </script>
